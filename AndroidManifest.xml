@@ -66,7 +66,7 @@
     <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
     <uses-permission android:name="com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS" />
-    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="3"/>
+    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="19"/>
 
     <application
         android:name="com.android.launcher3.LauncherApplication"
@@ -74,6 +74,7 @@
         android:icon="@mipmap/ic_launcher_home"
         android:hardwareAccelerated="true"
         android:largeHeap="@bool/config_largeHeap"
+        android:allowBackup="false"
         android:supportsRtl="true">
         <activity
             android:name="com.android.launcher3.Launcher"
