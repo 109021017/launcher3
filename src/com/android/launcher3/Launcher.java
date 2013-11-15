@@ -977,6 +977,9 @@ public class Launcher extends Activity
     }
 
     protected void startSettings() {
+    	Intent intent = new Intent(android.provider.Settings.ACTION_SETTINGS);
+    	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    	getApplicationContext().startActivity(intent);
     }
 
     public interface QSBScroller {
