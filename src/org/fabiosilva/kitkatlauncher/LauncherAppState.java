@@ -32,7 +32,7 @@ import org.fabiosilva.kitkatlauncher.R;
 
 public class LauncherAppState {
     private static final String TAG = "LauncherAppState";
-    private static final String SHARED_PREFERENCES_KEY = "com.android.launcher3.prefs";
+    private static final String SHARED_PREFERENCES_KEY = "org.fabiosilva.kitkatlauncher.prefs";
 
     private LauncherModel mModel;
     private IconCache mIconCache;

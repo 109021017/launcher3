@@ -61,7 +61,7 @@ public class InstallShortcutReceiver extends BroadcastReceiver {
 
     // A mime-type representing shortcut data
     public static final String SHORTCUT_MIMETYPE =
-            "com.android.launcher3/shortcut";
+            "org.fabiosilva.kitkatlauncher/shortcut";
 
     private static Object sLock = new Object();
 

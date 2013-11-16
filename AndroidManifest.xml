@@ -22,7 +22,7 @@
     package="org.fabiosilva.kitkatlauncher">
 
     <permission
-        android:name="com.android.launcher3.permission.PRELOAD_WORKSPACE"
+        android:name="org.fabiosilva.kitkatlauncher.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="system|signature" />
     <permission
@@ -38,20 +38,20 @@
         android:label="@string/permlab_uninstall_shortcut"
         android:description="@string/permdesc_uninstall_shortcut"/>
     <permission
-        android:name="com.android.launcher3.permission.READ_SETTINGS"
+        android:name="org.fabiosilva.kitkatlauncher.permission.READ_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_read_settings"
         android:description="@string/permdesc_read_settings"/>
     <permission
-        android:name="com.android.launcher3.permission.WRITE_SETTINGS"
+        android:name="org.fabiosilva.kitkatlauncher.permission.WRITE_SETTINGS"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
         android:protectionLevel="normal"
         android:label="@string/permlab_write_settings"
         android:description="@string/permdesc_write_settings"/>
 
     <permission
-        android:name="com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS"
+        android:name="org.fabiosilva.kitkatlauncher.permission.RECEIVE_LAUNCH_BROADCASTS"
         android:protectionLevel="signature"
         />
 
@@ -63,9 +63,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS" />
+    <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.RECEIVE_LAUNCH_BROADCASTS" />
     <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="19"/>
 
     <application
@@ -155,27 +155,27 @@
         <!-- Intent received used to prepopulate the default workspace. -->
         <receiver
             android:name="org.fabiosilva.kitkatlauncher.PreloadReceiver"
-            android:permission="com.android.launcher3.permission.PRELOAD_WORKSPACE">
+            android:permission="org.fabiosilva.kitkatlauncher.permission.PRELOAD_WORKSPACE">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.PRELOAD_WORKSPACE" />
+                <action android:name="org.fabiosilva.kitkatlauncher.action.PRELOAD_WORKSPACE" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
             android:name="org.fabiosilva.kitkatlauncher.InstallShortcutReceiver"
-            android:permission="com.android.launcher3.permission.INSTALL_SHORTCUT">
+            android:permission="org.fabiosilva.kitkatlauncher.permission.INSTALL_SHORTCUT">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.INSTALL_SHORTCUT" />
+                <action android:name="org.fabiosilva.kitkatlauncher.action.INSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
             android:name="org.fabiosilva.kitkatlauncher.UninstallShortcutReceiver"
-            android:permission="com.android.launcher3.permission.UNINSTALL_SHORTCUT">
+            android:permission="org.fabiosilva.kitkatlauncher.permission.UNINSTALL_SHORTCUT">
             <intent-filter>
-                <action android:name="com.android.launcher3.action.UNINSTALL_SHORTCUT" />
+                <action android:name="org.fabiosilva.kitkatlauncher.action.UNINSTALL_SHORTCUT" />
             </intent-filter>
         </receiver>
 
@@ -200,10 +200,10 @@
         <!-- The settings provider contains Home's data, like the workspace favorites -->
         <provider
             android:name="org.fabiosilva.kitkatlauncher.LauncherProvider"
-            android:authorities="com.android.launcher3.settings"
+            android:authorities="org.fabiosilva.kitkatlauncher.settings"
             android:exported="true"
-            android:writePermission="com.android.launcher3.permission.WRITE_SETTINGS"
-            android:readPermission="com.android.launcher3.permission.READ_SETTINGS" />
+            android:writePermission="org.fabiosilva.kitkatlauncher.permission.WRITE_SETTINGS"
+            android:readPermission="org.fabiosilva.kitkatlauncher.permission.READ_SETTINGS" />
 
         <meta-data android:name="android.nfc.disable_beam_default"
                        android:value="true" />

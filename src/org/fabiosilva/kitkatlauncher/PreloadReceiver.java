@@ -27,7 +27,7 @@ public class PreloadReceiver extends BroadcastReceiver {
     private static final boolean LOGD = false;
 
     public static final String EXTRA_WORKSPACE_NAME =
-            "com.android.launcher3.action.EXTRA_WORKSPACE_NAME";
+            "org.fabiosilva.kitkatlauncher.action.EXTRA_WORKSPACE_NAME";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -35,7 +35,7 @@ public class PreloadReceiver extends BroadcastReceiver {
         if (provider != null) {
             String name = intent.getStringExtra(EXTRA_WORKSPACE_NAME);
             final int workspaceResId = !TextUtils.isEmpty(name)
-                    ? context.getResources().getIdentifier(name, "xml", "com.android.launcher3") : 0;
+                    ? context.getResources().getIdentifier(name, "xml", "org.fabiosilva.kitkatlauncher") : 0;
             if (LOGD) {
                 Log.d(TAG, "workspace name: " + name + " id: " + workspaceResId);
             }

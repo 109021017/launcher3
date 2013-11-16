@@ -18,5 +18,5 @@ package org.fabiosilva.kitkatlauncher.config;
 
 public class ProviderConfig {
 
-    public static final String AUTHORITY = "com.android.launcher3.settings";
+    public static final String AUTHORITY = "org.fabiosilva.kitkatlauncher.settings";
 }

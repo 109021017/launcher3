@@ -42,18 +42,18 @@ import org.fabiosilva.kitkatlauncher.R;
  */
 public class InstallWidgetReceiver {
     public static final String ACTION_INSTALL_WIDGET =
-            "com.android.launcher3.action.INSTALL_WIDGET";
+            "org.fabiosilva.kitkatlauncher.action.INSTALL_WIDGET";
     public static final String ACTION_SUPPORTS_CLIPDATA_MIMETYPE =
-            "com.android.launcher3.action.SUPPORTS_CLIPDATA_MIMETYPE";
+            "org.fabiosilva.kitkatlauncher.action.SUPPORTS_CLIPDATA_MIMETYPE";
 
     // Currently not exposed.  Put into Intent when we want to make it public.
     // TEMP: Should we call this "EXTRA_APPWIDGET_PROVIDER"?
     public static final String EXTRA_APPWIDGET_COMPONENT =
-        "com.android.launcher3.extra.widget.COMPONENT";
+        "org.fabiosilva.kitkatlauncher.extra.widget.COMPONENT";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA_MIME_TYPE =
-        "com.android.launcher3.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
+        "org.fabiosilva.kitkatlauncher.extra.widget.CONFIGURATION_DATA_MIME_TYPE";
     public static final String EXTRA_APPWIDGET_CONFIGURATION_DATA =
-        "com.android.launcher3.extra.widget.CONFIGURATION_DATA";
+        "org.fabiosilva.kitkatlauncher.extra.widget.CONFIGURATION_DATA";
 
     /**
      * A simple data class that contains per-item information that the adapter below can reference.
