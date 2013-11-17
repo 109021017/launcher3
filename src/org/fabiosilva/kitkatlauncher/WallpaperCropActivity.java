@@ -56,7 +56,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class WallpaperCropActivity extends Activity {
-    private static final String LOGTAG = "Launcher3.CropActivity";
+    private static final String LOGTAG = "KitKat Launcher.CropActivity";
 
     protected static final String WALLPAPER_WIDTH_KEY = "wallpaper.width";
     protected static final String WALLPAPER_HEIGHT_KEY = "wallpaper.height";
