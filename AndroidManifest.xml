@@ -21,6 +21,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.fabiosilva.kitkatlauncher" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
 
+    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="16"/>
+    
     <permission
         android:name="org.fabiosilva.kitkatlauncher.permission.PRELOAD_WORKSPACE"
         android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
@@ -66,7 +68,6 @@
     <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.READ_SETTINGS" />
     <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="org.fabiosilva.kitkatlauncher.permission.RECEIVE_LAUNCH_BROADCASTS" />
-    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="16"/>
 
     <application
         android:name="org.fabiosilva.kitkatlauncher.LauncherApplication"
