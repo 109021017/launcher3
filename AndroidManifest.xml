@@ -21,7 +21,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.fabiosilva.kitkatlauncher" android:installLocation="auto" android:versionCode="1" android:versionName="1.0">
 
-    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="16"/>
+    <uses-sdk android:targetSdkVersion="19" android:minSdkVersion="17"/>
     
     <permission
         android:name="org.fabiosilva.kitkatlauncher.permission.PRELOAD_WORKSPACE"
